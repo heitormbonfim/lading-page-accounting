@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-// import { Analytics } from "@vercel/analytics/react";
+import { Analytics } from "@vercel/analytics/next";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Dager & Associados",
+  title: "Contabilidade Fictícia",
   description: "Associados Consultoria Empresarial",
 };
 
@@ -22,7 +22,7 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         {children}
-        {/* <Analytics /> */}
+        <Analytics />
       </body>
     </html>
   );
