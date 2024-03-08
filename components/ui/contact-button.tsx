@@ -9,11 +9,7 @@ export default function ContactButton({ className }: { className?: string }) {
       className={`text-lg rounded-full bg-[#122a4c] text-white hover:bg-[#030b3c] ${className}`}
       asChild
     >
-      <a
-        href="https://api.whatsapp.com/send/?phone=5588998720814&text&type=phone_number&app_absent=0"
-        target="_blank"
-        className="gap-2 items-center"
-      >
+      <a href="#" target="_blank" className="gap-2 items-center">
         Contato <FaWhatsapp />
       </a>
     </Button>
